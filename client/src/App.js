@@ -27,8 +27,8 @@ render () {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <h1>Womens Worl Cup</h1>
-        <p>name: "Alex Morgan", country: "United States", searches: 100, id: 0</p>
+         <h1 data-testid='title'> Womens Worl Cup</h1>
+        {/*<p>name: "Alex Morgan", country: "United States", searches: 100, id: 0</p>
         <p>Complete Players List Components</p>
         <p>Import Players List</p>
         <p>Complete Players Card</p>
@@ -36,7 +36,7 @@ render () {
         <p>Complete LocalStorage, Dardmode, NavBar and use DarkMode NavBar</p>
         <p>Import NavBar</p> */}
         <Navbar/>
-        <PlayersList players={this.state.players}/>
+        <PlayersList data-testid = "players" players={this.state.players}/>
       </header>
     </div>
   );
