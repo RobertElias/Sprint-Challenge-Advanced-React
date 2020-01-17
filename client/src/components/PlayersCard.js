@@ -7,7 +7,8 @@ const PlayersCard = props => {
       {/* <CardSubtitle>Testing Players Card</CardSubtitle> */}
       <CardSubtitle data-testid="playersName" >Name: {props.player.name}</CardSubtitle>
       <CardSubtitle data-testid="playersCountry">Country: {props.player.country}</CardSubtitle>
-      <CardSubtitlen data-testid="playersId" >ID: {props.player.id}</CardSubtitle>
+      <CardSubtitle data-testid="playersId">ID: {props.player.id}</CardSubtitle>
+      
     </Card>
   );
 };
