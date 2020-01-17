@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import axios from 'axios';
+import PlayersList from './components/PlayersList';
 
 class App extends React.Component {
 
@@ -32,6 +33,7 @@ render () {
         <p>Import Players List</p>
         <p>Complete Players Card</p>
         <p>Import Players Card to PlayersList</p>
+        <PlayersList players={this.state.players}/>
       </header>
     </div>
   );

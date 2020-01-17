@@ -1,17 +1,15 @@
-import React from 'react'
-import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
-  } from 'reactstrap';
+import React from "react";
+import { Card, CardSubtitle } from "reactstrap";
 
-
-  const PlayersCard = props => {
-    return (
-       <Card>
-           <CardSubtitle>Testing Players Card</CardSubtitle>
-       </Card>
-
-    )
-}
+const PlayersCard = props => {
+  return (
+    <Card>
+      <CardSubtitle>Testing Players Card</CardSubtitle>
+      <CardSubtitle>Name: {props.player.name}</CardSubtitle>
+      <CardSubtitle>Country: {props.player.country}</CardSubtitle>
+      <CardSubtitle>ID: {props.player.id}</CardSubtitle>
+    </Card>
+  );
+};
 
 export default PlayersCard;

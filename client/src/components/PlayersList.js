@@ -1,18 +1,13 @@
-import react from 'react'
-// import PlayersCard from './PlayersCard';
+import React from "react";
+import PlayersCard from "./PlayersCard";
 
 const PlayersList = props => {
-
-    return (
-
-    <div>
-        <div className="playerslist">
-          <PlayersCard user={this.state.players} />
-          {props.players.map((player) => (
-            <PlayersCard key={player.id} player={player}/>
-          ))}
-        </div>
+  return (
+    <div className="player-list">
+      {props.players.map(player => (
+        <PlayersCard key={player.id} player={player} />
+      ))}
     </div>
-
-    )
-}
+  );
+};
+export default PlayersList;
