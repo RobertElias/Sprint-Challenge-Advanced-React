@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Navbar from './components/Navbar';
 import './App.css';
 import axios from 'axios';
 import PlayersList from './components/PlayersList';
@@ -33,6 +33,9 @@ render () {
         <p>Import Players List</p>
         <p>Complete Players Card</p>
         <p>Import Players Card to PlayersList</p>
+        <p>Complete LocalStorage, Dardmode, NavBar and use DarkMode NavBar</p>
+        <p>Import NavBar</p>
+        <Navbar/>
         <PlayersList players={this.state.players}/>
       </header>
     </div>
